@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- controls: 비디오 조정(재생, 정지 등)을 위한 UI 제공 -->
+    <!-- autoplay: 자동 재생. 근데 이제 크롬에서 안 된다고 함. https://ddunnimlabs.tistory.com/94 -->
+    <!-- muted: 음소거. muted 넣으면 autoplay가 됨. -->
+    <!-- loop: 영상 반복 재생 -->
+    <!-- poster: 썸네일 이미지 -->
+    <!-- preload: auto, metadata, none 값. -->
+        <!-- auto: 영상을 미리 자동으로 다운로드. 시청할 확률이 높고, 바로 보여줘야 하는 중요한 영상에 사용. -->
+        <!-- metadata: 영상 말고, 영상 상영 시간 등 메타 정보만 미리 가져옴. -->
+        <!-- none: 시청할 확률이 높지 않을 때 사용(메타 정보도 안 가져옴) -->
+
+    <video src="./media/just_video.mp4" poster="./media/pikachu.png" width="80%" controls muted preload="auto"></video>
+
+    <br><br>
+
+    <!-- 이건 자막 다는 건데 왜 안 되냐고 ㅆㅂ -->
+    <video src="./media/just_video.mp4" width="320px" controls>
+        <track src="./media/just_video_ko.vtt" kind="subtitles" srclang="ko" label="한국어(Korean)">
+        <track src="./media/just_video_en.vtt" kind="subtitles" srclang="en" label="영어(English)">
+    </video>
+</body>
+</html>

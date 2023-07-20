@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 가상 클래스 선택자 */
+        a{
+            text-decoration: none;
+        }
+
+        /* 마우스가 a 태그 위에 올라올 때 */
+        a:hover{
+            color: white;
+            background-color: skyblue;
+        }
+
+        /* 방문한 적이 없는 링크 */
+        a:link{
+            color: blue;
+        }
+
+        /* 방문한 적이 있는 링크 */
+        a:visited{
+            color: green;
+        }
+
+        button:hover{
+            color: white;
+            background-color: red;
+        }
+
+        /* 마우스가 포커스 됐을 때 */
+        input:focus{
+            border: 5px solid red;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table{
+            width: 100%;
+        }
+
+        /* 2n or even: 짝수행 */
+        /* 2n+1 or odd: 홀수행 */
+        tbody > tr:nth-child(2n){ 
+            background-color: greenyellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com/">네이버</a>
+    <a href="https://www.google.com/">구글</a>
+    <a href="https://asdfasdf.com">가짜 사이트(방문 안 한)</a>
+
+    <br>
+
+    <button>조회</button>
+
+    <br>
+
+    <input type="text" name="" id="">
+
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>연락처</th>
+                <th>이메일</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>김진짜</td>
+                <td>010-0000-0000</td>
+                <td>kim@real.com</td>
+            </tr>
+            <tr>
+                <td>이진짜</td>
+                <td>010-1111-1111</td>
+                <td>lee@real.com</td>
+            </tr>
+            <tr>
+                <td>박진짜</td>
+                <td>010-2222-2222</td>
+                <td>park@real.com</td>
+            </tr>
+            <tr>
+                <td>최진짜</td>
+                <td>010-3333-3333</td>
+                <td>choi@real.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

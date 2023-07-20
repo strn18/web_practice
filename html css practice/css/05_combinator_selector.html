@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 복합 선택자 */
+
+        /* 하위 선택자 방식 */
+        /* section ul{
+            border: 1px solid black;
+        } */
+
+        /* 자식 선택자 방식 */
+        section > ul{
+            border: 1px solid black;
+        }
+
+        /* 인접 형제 선택자 */
+        /* h1 + ul{
+            background-color: skyblue;
+        } */
+
+        /* 일반 형제 선택자 */
+        h1 ~ ul{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>p 태그</p>
+        <ul>
+            <li>li 태그
+                <ul>
+                    <li>li 태그</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <div>
+        <h1>h1 태그</h1>
+        <ul>
+            <li>li 태그</li>
+        </ul>
+        <ul>
+            <li>li 태그</li>
+        </ul>
+    </div>
+</body>
+</html>

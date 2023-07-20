@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .font1{
+            font-family: 'Courier New', Courier, monospace;
+            /* 브라우저에 Courier New가 있으면 그걸로,
+            없으면 Courier로,
+            그것도 없으면 monospace 글꼴들 중에서 있는 거 아무거나 */
+        }
+        .font2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .italic{ /* 이탤릭체 */
+            font-style: italic;
+        }
+        .oblique{ /* 기본 글씨체를 살짝 기울임 */
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <!-- 글꼴 스타일링 -->
+    <h1 style="font-family: verdana;">verdana 폰트</h1>
+    <h1 style="font-family: courier;">courier 폰트</h1>
+
+    <h1 class="font1">
+        현재 브라우저에 Courier New 폰트가 있으면 적용. 
+        없으면 Courier 적용. 그것도 없으면 monospace 중 하나를 적용.
+    </h1>
+
+    <h1 class="font2">
+        Arial > Helvetica > sans-serif
+    </h1>
+
+    <!-- 폰트 스타일 -->
+    <h1 class="italic">이탤릭체로 보여집니다.</h1>
+    <h1 class="oblique">기본 글씨체가 기울어져 보입니다.</h1>
+
+    <!-- 폰트 굵기 -->
+    <!-- normal, bold, bolder, lighter 100~900 -->
+    
+    <!-- normal: 보통 폰트. 숫자값 400과 동일. -->
+    <p style="font-weight: normal;">font-weight: normal</p>
+    <p style="font-weight: 400;">font-weight: 400</p>
+    <!-- bold: 굵은 폰트, 숫자값 700과 동일. -->
+    <p style="font-weight: bold;">font-weight: bold</p>
+    <p style="font-weight: 700;">font-weight: 700</p>
+    <!-- bolder: 부모 기준 상대적인 값 -->
+    <div style="font-weight: 100;">
+        <p style="font-weight: bolder;">부모가 100일 때, bolder는 400</p>
+    </div>
+    <div style="font-weight: 200;">
+        <p style="font-weight: bolder;">부모가 200일 때, bolder는 400</p>
+    </div>
+    <div style="font-weight: 300;">
+        <p style="font-weight: bolder;">부모가 300일 때, bolder는 400</p>
+    </div>
+    <div style="font-weight: 400;">
+        <p style="font-weight: bolder;">부모가 400일 때, bolder는 700</p>
+    </div>
+    <div style="font-weight: 500;">
+        <p style="font-weight: bolder;">부모가 500일 때, bolder는 700</p>
+    </div>
+    <div style="font-weight: 600;">
+        <p style="font-weight: bolder;">부모가 600 이상일 때, bolder는 900</p>
+    </div>
+    <!-- lighter: 부모 기준 상대적인 값 -->
+    <div style="font-weight: 100;">
+        <p style="font-weight: lighter;">부모가 100일 때, lighter는 100</p>
+    </div>
+    <div style="font-weight: 200;">
+        <p style="font-weight: lighter;">부모가 200일 때, lighter는 100</p>
+    </div>
+    <div style="font-weight: 300;">
+        <p style="font-weight: lighter;">부모가 300일 때, lighter는 100</p>
+    </div>
+    <div style="font-weight: 400;">
+        <p style="font-weight: lighter;">부모가 400일 때, lighter는 100</p>
+    </div>
+    <div style="font-weight: 500;">
+        <p style="font-weight: lighter;">부모가 500일 때, lighter는 100</p>
+    </div>
+    <div style="font-weight: 600;">
+        <p style="font-weight: lighter;">부모가 600일 때, lighter는 400</p>
+    </div>
+    <div style="font-weight: 700;">
+        <p style="font-weight: lighter;">부모가 700일 때, lighter는 400</p>
+    </div>
+    <div style="font-weight: 800;">
+        <p style="font-weight: lighter;">부모가 800일 때, lighter는 700</p>
+    </div>
+    <div style="font-weight: 900;">
+        <p style="font-weight: lighter;">부모가 900일 때, lighter는 700</p>
+    </div>
+
+    <!-- 폰트 크기(기본값은 12pt == 16px == 1em == 100% 사용) -->
+    <!-- 절댓값: xx-small, x-small, small, medium, large, x-large, xx-large -->
+    <!-- 상대값: larger, smaller -->
+    <!-- 길이값: em(부모 요소의 폰트 크기를 기준으로) -->
+        <!-- rem(루트 요소의 폰트 크기를 기준으로), px, pt(1pt = 0.72인치) -->
+    <!-- 퍼센트값으로 주기 -->
+    <p style="font-size: 10px;">font-size: 10px</p>
+    <p style="font-size: 8pt;">font-size: 8pt</p>
+    <div style="font-size: 20px;">
+        <p style="font-size: 1em;">1em(20px * 1 = 20px)이다.</p>
+        <p style="font-size: 0.5em;">0.5em(20px * 0.5 = 10px)이다.</p>
+        <p style="font-size: 1rem;">1rem(16px * 1 = 16px)이다.</p>
+    </div>
+    <p style="font-size: 20px;">20px이다.</p>
+    <p style="font-size: 10px;">10px이다.</p>
+    <p style="font-size: 16px;">16px이다.</p>
+</body>
+</html>

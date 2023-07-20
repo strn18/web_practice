@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .sn{
+                font-weight: bold;
+                color: skyblue;
+            }
+            .fr{
+                color: red;
+            }
+            #first{
+                color: green;
+            }
+            span{
+                color: purple;
+            }
+        </style>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+
+    <body>
+        <p style="background-color: darkgoldenrod">hello?</p>
+        <input type="button" value="hi" onclick="alert('HI!')">
+        <input type="text" onchange="alert('changed')">
+        <p style="color:aqua">hi!!</p>
+        <input type="text" onkeydown="alert('KEY')">
+        <p>
+            The <span id="first" class="sn">snow</span> glows white on the mountain tonight not a 
+            footprints to be seen. I like <span class="sn">snow</span>!
+            I love to make <span class="sn">snow</span>man!
+            How about <span id="second" class="fr">fire</span>?
+            Is this <span>purple</span>?
+        </p>
+
+        <p>
+            <a href="somewhere.html">go to somewhere..?</a>
+            <br>
+            <a href="script2.html">go to script2..!</a>
+        </p>
+
+        <h1>1 &lt; 2</h1>
+        <script>
+            var people = ['tom', 'sam', 'john'];
+            for(i=0; i<people.length; i++)
+                document.write('<li>'+people[i]+'</li>');
+        </script>
+        <br><br>
+
+        <input type="button" value="night" onclick="
+            var target = document.querySelector('body');
+            if(this.value === 'night'){
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                this.value = ' day ';
+            }
+            else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                this.value = 'night';
+            }
+        ">
+        <br>
+        <input type="button" value="night" onclick="
+            var target = document.querySelector('body');
+            if(this.value === 'night'){
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                this.value = ' day ';
+            }
+            else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                this.value = 'night';
+            }
+        ">
+
+        <br><br>
+
+        <input type="button" value="night" class="nd" onclick="
+            var target = document.querySelector('body');
+            var buttons = document.querySelectorAll('.nd');
+            if(this.value === 'night'){
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                for(i=0; i<buttons.length; i++)
+                    buttons[i].value = ' day ';
+            }
+            else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                for(i=0; i<buttons.length; i++)
+                    buttons[i].value = 'night';
+            }
+        ">
+        <br>
+        <input type="button" value="night" class="nd" onclick="
+            var target = document.querySelector('body');
+            var buttons = document.querySelectorAll('.nd');
+            if(this.value === 'night'){
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                for(i=0; i<buttons.length; i++)
+                    buttons[i].value = ' day ';
+            }
+            else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                for(i=0; i<buttons.length; i++)
+                    buttons[i].value = 'night';
+            }
+        ">
+        These will not change color of links.
+
+        <br><br>
+        <input type="button" value="night" onclick="
+            var target = document.querySelector('body');
+            var alist = document.querySelectorAll('a');
+            if(this.value === 'night'){
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                this.value = ' day ';
+                for(i=0; i<alist.length; i++)
+                    alist[i].style.color = 'powderblue';
+            }
+            else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                this.value = 'night';
+                for(i=0; i<alist.length; i++)
+                    alist[i].style.color = '-webkit-link';
+            }
+        ">
+        But this can.
+
+
+    </body>
+    
+
+</html>

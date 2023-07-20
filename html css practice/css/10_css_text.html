@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-center{
+            text-align: center;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .text-left{
+            text-align: left;
+        }
+
+        .text-blue{
+            color: blue;
+        }
+
+        .underline{
+            text-decoration: underline;
+        }
+        .overline{
+            text-decoration: overline;
+        }
+        .delline{
+            text-decoration: line-through;
+        }
+        .plain{
+            text-decoration: none;
+        }
+
+        /* text-decoration은 원래 4가지 속성값을 가짐 */
+        /* text-decoration-style: 직선, 점선 등 */
+        /* text-decoration-line: 밑줄, 윗줄 등 */
+        /* text-decoration-color: 장식선 색상*/
+        /* text-decoration-thickness: 장식선 두께 */
+
+        .underover{
+            /* text-decoration: dashed underline overline red 4px; */
+            text-decoration-style: dashed;
+            text-decoration-line: underline overline;
+            text-decoration-color: red;
+            text-decoration-thickness: 4px;
+        }
+
+        .uppercase{
+            text-transform: uppercase;
+        }
+        .lowercase{
+            text-transform: lowercase;
+        }
+        .capitalize{
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <!-- 기본적인 텍스트 관련 스타일링 -->
+
+    <!-- 텍스트 정렬 -->
+    <h1 class="text-center">가운데 정렬</h1>
+    <h1 class="text-right">오른쪽 정렬</h1>
+    <h1 class="text-left">왼쪽 정렬</h1>
+    
+    <br>
+
+    <!-- 텍스트 색상 -->
+    <h1 class="text-blue">파란색</h1>
+
+    <br>
+
+    <!-- 텍스트 장식선 -->
+    <p class="underline">밑줄을 가진 텍스트</p>
+    <p class="overline">윗줄을 가진 텍스트</p>
+    <p class="delline">취소선을 가진 텍스트</p>
+    <a href="" class="plain">a 태그의 기본 밑줄 없애기</a>
+    <p class="underover">밑줄과 윗줄을 가진 텍스트</p>
+
+    <br>
+
+    <!-- 텍스트 변환 -->
+    <p class="uppercase">i am uppercase</p>
+    <p class="lowercase">I AM LOWERCASE</p>
+    <p class="capitalize">first</p>
+    <input type="text" name="" id="" class="uppercase" placeholder="UPPER">
+    <!-- 그러나 이 값은 실제로는 소문자이다. 눈에 보이는 것만 대문자임. -->
+</body>
+</html>

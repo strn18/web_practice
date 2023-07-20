@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action: form 안의 데이터를 전송할 주소 -->
+
+    <!-- method: 데이터를 전송할 방법 -->
+        <!-- get: 전송하는 데이터가 url에 붙어서 전송됨. 사용자가 볼 수 있다. 보안에 취약. -->
+        <!-- 웹페이지 url에 보면, '?' 이후에 있는 애들이 있음. 얘네들이 url에 붙어서 전송된다는 것. -->
+        <!-- 내가 딱 보고 있는 그 페이지 주소를 공유해야 할 때 사용. -->
+        <!-- 전송할 수 있는 데이터의 크기에 제약(url에 붙여서 보내므로). -->
+
+        <!-- post: 데이터가 url에 붙지 않음. 사용자가 볼 수 없다. 안정적인 보안. -->
+        <!-- 하지만 개발자 도구에는 보임. -->
+        <!-- 전송할 수 있는 데이터의 크기에 제약이 없음. -->
+
+    <!-- target: 데이터를 전송(action의 주소로)할 창을 어디로 할 것인가 -->
+        <!-- _self: 자기자신 창(탭)에서 전송됨 -->
+        <!-- _blank: 새 창이 열리면서 거기로 전송됨 -->
+        <!-- _parent, _top: iframe이라는 태그와 관련 -->
+    
+    <form action="" method="get" target="_self" novalidate>
+        <div>
+            <label for="name">이름</label>
+            <input type="text" name="name" id="name" autocomplete="on">
+        </div>
+
+        <div>
+            <label for="tel">연락처</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+        
+        <div>
+            <label for="email">이메일</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <!-- 이메일에서 형식 체크 안 하도록 하려면? -->
+        <!-- 1) button에서 아래와 같은 속성 추가 -->
+        <!-- 2) form에서 novalidate 추가 -->
+        
+        <!-- <button type="submit" formnovalidate="formnovalidate">저장</button> -->
+        <button type="submit">저장</button>
+    </form>
+</body>
+</html>

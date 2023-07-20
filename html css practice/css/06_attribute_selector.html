@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 속성 선택자 */
+        /* input{
+            border: 2px solid red;
+        } */
+
+        [name="e_mail"]{
+            border: 2px solid blue;
+        }
+
+        .box1 input[type="text"]{
+            border: 2px solid red;
+        }
+
+        .box1 input[name="d_ate"]{
+            border: 2px solid green;
+        }
+
+        .box2 [name="d_ate"]{
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <input type="text" name="" id="">
+        <input type="email" name="e_mail" id="">
+        <input type="date" name="d_ate" id="">
+
+        <p name="d_ate">name 값이 "d_ate"인 p 태그입니다.</p>
+    </div>
+
+    <div class="box2">
+        <input type="text" name="" id="">
+        <input type="email" name="e_mail" id="">
+        <input type="date" name="d_ate" id="">
+
+        <p name="d_ate">name 값이 "d_ate"인 p 태그입니다.</p>
+    </div>
+</body>
+</html>

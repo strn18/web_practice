@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 300px;
+            height: 100px;
+            margin: 10px;
+            border: 10px solid green;
+            padding: 10px;
+        } */
+
+        .box-cb{
+            box-sizing: content-box;
+            /* box의 넓이를 content를 기준으로(이게 기본값). */
+        }
+
+        .box-bb{
+            box-sizing: border-box;
+            /* border를 기준으로. */
+        }
+
+        /* px 또는 %로 할 수 있음.  */
+        /* %로 할 경우, 부모 요소를 기준으로 상대적인 값. */
+    </style>
+</head>
+<body>
+    <!-- <div>CSS box model</div>
+    <div class="box-cb">CSS box model(content-box)</div>
+    <div class="box-bb">CSS box model(border-box)</div> -->
+
+    <div style="width: 100%; height: 200px; background-color: green;">
+        <div style="
+            width: 50%; 
+            max-width: 500px; 
+            min-width: 300px; 
+            height: 50%; 
+            background-color: red;
+        ">
+        </div>
+    </div>
+</body>
+</html>

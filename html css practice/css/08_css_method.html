@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css_files/style.css">
+    <!-- 참고로 순서가 중요함(밑의 style이 더 뒤에 나오면 그걸로 덮어씌워짐) -->
+
+    <style>
+        /* .table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table tr th, .table tr td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .striped-table tbody tr:nth-child(2n+1){
+            background-color: greenyellow;
+        } */
+    </style>
+</head>
+<body>
+    <!-- CSS를 적용하는 방법 3가지 -->
+
+    <!-- 1. inline style: html 태그에 style 속성으로 직접 지정 -->
+    <a href="" style="text-decoration: none;">inline style 사용</a>
+    <br><br>
+
+    <!-- 2. internal css: head 태그의 style 태그에 지정 -->
+    <!-- 위의 head 태그의 style 태그 부분 주석 풀면 됨 -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>연락처</th>
+                <th>이메일</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>김진짜</td>
+                <td>010-0000-0000</td>
+                <td>kim@real.com</td>
+            </tr>
+            <tr>
+                <td>이진짜</td>
+                <td>010-1111-1111</td>
+                <td>lee@real.com</td>
+            </tr>
+            <tr>
+                <td>박진짜</td>
+                <td>010-2222-2222</td>
+                <td>park@real.com</td>
+            </tr>
+            <tr>
+                <td>최진짜</td>
+                <td>010-3333-3333</td>
+                <td>choi@real.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table class="table striped-table">
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>연락처</th>
+                <th>이메일</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>김진짜</td>
+                <td>010-0000-0000</td>
+                <td>kim@real.com</td>
+            </tr>
+            <tr>
+                <td>이진짜</td>
+                <td>010-1111-1111</td>
+                <td>lee@real.com</td>
+            </tr>
+            <tr>
+                <td>박진짜</td>
+                <td>010-2222-2222</td>
+                <td>park@real.com</td>
+            </tr>
+            <tr>
+                <td>최진짜</td>
+                <td>010-3333-3333</td>
+                <td>choi@real.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 3. external css: 별도의 css 파일을 만들고, head 태그에 그 파일을 삽입 -->
+    <!-- 8행에서 link 태그 사용한 것 -->
+</body>
+</html>
