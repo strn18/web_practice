@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    html{
+      scroll-behavior: smooth;
+      /* 메뉴 5를 눌러서 #project5로 갈 때 스무스하게 스크롤되도록 함. */
+    }
+
+    body{
+      margin: 0px;
+    }
+
+    .header{
+      padding: 60px;
+      text-align: center;
+      background-color: #f9fc63;
+      color: black;
+    }
+
+    .nav-bar{
+      display: flex;
+      flex-direction: row;
+      background-color: #333;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+    }
+
+    .nav-bar a{
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .nav-bar a:hover{
+      background-color: #f9fc63;
+      color: black;
+    }
+
+    .row{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .side{
+      flex: 30%; /* 너비를 30% 차지한다는 뜻 */
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .fake-img{
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .main{
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .footer{
+      padding: 20px;
+      text-align: center;
+      background-color: #ddd;
+    }
+
+    @media screen and (max-width: 768px){
+      .row, .nav-bar{
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 레이아웃을 위한 시멘틱 태그 -->
+
+  <!-- header -->
+  <header class="header">
+    <h1>Who Am I</h1>
+  </header>
+
+  <!-- nav -->
+  <nav class="nav-bar">
+    <a href="">메뉴 1</a>
+    <a href="">메뉴 2</a>
+    <a href="">메뉴 3</a>
+    <a href="">메뉴 4</a>
+    <a href="#project5">메뉴 5</a>
+  </nav>
+
+  <div class="row">
+    <!-- aside -->
+    <aside class="side">
+      <div class="about">
+        <h2>About</h2>
+
+        <div class="fake-img" style="height: 200px;">Image</div>
+        <p>
+          저는 코알못입니다... 살려주세요 ㅠ
+        </p>
+
+        <h3>Skills</h3>
+        <p>
+          진짜, 아무것도, 몰라요
+        </p>
+        <div class="fake-img" style="height: 60px; margin-bottom: 20px;">Image</div>
+        <div class="fake-img" style="height: 60px; margin-bottom: 20px;">Image</div>
+        <div class="fake-img" style="height: 60px;">Image</div>
+      </div>
+    </aside>
+
+    <!-- main -->
+    <main class="main">
+      <!-- section -->
+      <section>
+        <h2>프로젝트 1</h2>
+
+        <h5>2023년 8월</h5>
+        <div class="fake-img" style="height: 200px;">Image</div>
+        <p>
+          이 프로젝트는 어쩌구 프로젝트입니다. 역할은 무임승차~
+        </p>
+      </section>
+
+      <section>
+        <h2>프로젝트 2</h2>
+
+        <h5>2023년 8월</h5>
+        <div class="fake-img" style="height: 200px;">Image</div>
+        <p>
+          이 프로젝트는 어쩌구 프로젝트입니다. 역할은 무임승차~
+        </p>
+      </section>
+
+      <section>
+        <h2>프로젝트 3</h2>
+
+        <h5>2023년 8월</h5>
+        <div class="fake-img" style="height: 200px;">Image</div>
+        <p>
+          이 프로젝트는 어쩌구 프로젝트입니다. 역할은 무임승차~
+        </p>
+      </section>
+
+      <section>
+        <h2>프로젝트 4</h2>
+
+        <h5>2023년 8월</h5>
+        <div class="fake-img" style="height: 200px;">Image</div>
+        <p>
+          이 프로젝트는 어쩌구 프로젝트입니다. 역할은 무임승차~
+        </p>
+      </section>
+
+      <section id="project5">
+        <h2>프로젝트 5</h2>
+
+        <h5>2023년 8월</h5>
+        <div class="fake-img" style="height: 200px;">Image</div>
+        <p>
+          이 프로젝트는 어쩌구 프로젝트입니다. 역할은 무임승차~
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <div class="footer">
+    <h2>Copyright 김아무개 2023</h2>
+  </div>
+
+</body>
+</html>

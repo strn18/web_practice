@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p{
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <!-- overflow -->
+  <!-- 자식 요소가 부모 요소보다 크기가 더 클 경우 -->
+  <!-- 자식 요소를 어떻게 보여줄지 결정 -->
+
+  <!-- overflow-x와 overflow-y가 있다. overflow로 한 번에 주는 것 가능 -->
+
+  <div style="height: 200px; border: 3px solid green; overflow-y: scroll;">
+    <p>콘텐츠</p>
+    <p>콘텐츠</p>
+    <p>콘텐츠</p>
+    <p>콘텐츠</p>
+    <p>콘텐츠</p>
+    <p>콘텐츠</p>
+    <p>콘텐츠</p>
+    <p>콘텐츠</p>
+    <p>콘텐츠</p>
+    <p>콘텐츠</p>
+  </div>
+
+  <br>
+
+  <div style="height: 200px; width: 150px; border: 3px solid green;">
+    <p>콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠</p>
+    <!-- 위에서 p태그의 style 속성을 따로 줌으로써, x축으로 벗어나게 됨(기본값으로는 벗어나지 않는다) -->
+    <p>콘텐츠</p>
+    <p>콘텐츠</p>
+  </div>
+
+  <br>
+
+  <div style="height: 200px; width: 150px; border: 3px solid green; overflow-x: scroll;">
+    <p>콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠</p>
+    <p>콘텐츠</p>
+    <p>콘텐츠</p>
+  </div>
+
+  <br>
+
+  <div style="height: 200px; width: 200px; border: 3px solid green; overflow: scroll;">
+    <p>콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠</p>
+    <p>콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠</p>
+    <p>콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠</p>
+    <p>콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠</p>
+    <p>콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠</p>
+    <p>콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠</p>
+    <p>콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠 콘텐츠</p>
+  </div>
+
+  <br>
+
+  <!-- overflow: scroll은 콘텐츠의 길이와 상관 없이 스크롤 바가 생김. -->
+  <div style="overflow: scroll; height: 300px; width: 300px; border: 3px solid red;">
+    <p>콘텐츠</p>
+  </div>
+
+  <br>
+
+  <!-- overflow: auto는 콘텐츠의 길이가 길어지면 생김. -->
+  <div style="overflow: auto; height: 300px; width: 300px; border: 3px solid red;">
+    <p>콘텐츠</p>
+  </div>
+
+  
+
+  
+  
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .container{
+      display: flex;
+
+      flex-direction: row; /* x축을 기준으로, 좌에서 우로. */
+      /* flex-direction: column; y축을 기준으로, 상에서 하로. */
+      /* flex-direction: row-reverse; x축을 기준으로, 우에서 좌로. */
+      /* flex-direction: column-reverse; y축을 기준으로, 하에서 상으로. */
+      
+      flex-wrap: wrap; /* item이 한 행에 안 담기면, 복수행을 갖게 한다. */
+
+      border: 3px dotted black;
+    }
+
+    .item{
+      background-color: greenyellow;
+      border: 2px solid blue;
+      width: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body{
+      background-color: yellow;
+    }
+
+    /* 미디어 쿼리 */
+    /* 괄호 안에 조건문처럼 조건이 들어간다. 이를 만족하면 적용됨. */
+
+    /* max-width: 1000px이라고 하면, width가 1000px 이하일 때 반응. */
+    @media screen and (max-width: 1000px){
+      body{
+        background-color: red;
+      }
+    }
+
+    /* width가 600px 이하가 되면 background-color가 blue가 된다. */
+    @media screen and (max-width: 600px){
+      body{
+        background-color: blue;
+      }
+    }
+
+    /* 현재 브라우저가 가로 모드일 경우 적용됨. */
+    /* @media (orientation: landscape){
+      body{
+        background-color: green;
+      }
+    } */
+
+    /* 현재 브라우저가 세로 모드일 경우 적용됨. */
+    /* @media (orientation: portrait){
+      body{
+        background-color: skyblue;
+      }
+    } */
+  </style>
+</head>
+<body>
+  
+</body>
+</html>
