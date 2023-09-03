@@ -1,0 +1,24 @@
+#main {
+  text-align: center;
+}
+
+#calc-body {
+  width: 400px;
+  background-color: antiquewhite;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+#display {
+  margin: 5px;
+  height: 70px;
+  background-color: brown;
+}
+
+.b {
+  background-color: aquamarine;
+  width: 90px;
+  height: 70px;
+  margin: 5px;
+  display: inline-block;
+}
